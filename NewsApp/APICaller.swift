@@ -12,7 +12,7 @@ final class APICaller {
     
     struct Constants {
         static let topHeadlinesURL = URL(string:
-                                            "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY")
+                                            "https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=c31862f807614b659497bd152a6bdf54")
     }
     
     private init() {}
@@ -49,9 +49,9 @@ struct APIResponse: Codable {
 struct Article: Codable {
     let source: Source
     let title: String
-    let description: String
-    let url: String
-    let urlToImage: String
+    let description: String?
+    let url: String?
+    let urlToImage: String?
     let publishedAt: String
 }
 
