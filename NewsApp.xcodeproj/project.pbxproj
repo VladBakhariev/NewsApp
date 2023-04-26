@@ -13,6 +13,7 @@
 		CE30541C29F991860015CB09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE30541A29F991860015CB09 /* Main.storyboard */; };
 		CE30541E29F9918B0015CB09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE30541D29F9918B0015CB09 /* Assets.xcassets */; };
 		CE30542129F9918B0015CB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE30541F29F9918B0015CB09 /* LaunchScreen.storyboard */; };
+		CE30542929F994360015CB09 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30542829F994360015CB09 /* APICaller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CE30541D29F9918B0015CB09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE30542029F9918B0015CB09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE30542229F9918B0015CB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE30542829F994360015CB09 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				CE30541429F991860015CB09 /* AppDelegate.swift */,
 				CE30541629F991860015CB09 /* SceneDelegate.swift */,
 				CE30541829F991860015CB09 /* ViewController.swift */,
+				CE30542829F994360015CB09 /* APICaller.swift */,
 				CE30541A29F991860015CB09 /* Main.storyboard */,
 				CE30541D29F9918B0015CB09 /* Assets.xcassets */,
 				CE30541F29F9918B0015CB09 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				CE30541929F991860015CB09 /* ViewController.swift in Sources */,
 				CE30541529F991860015CB09 /* AppDelegate.swift in Sources */,
 				CE30541729F991860015CB09 /* SceneDelegate.swift in Sources */,
+				CE30542929F994360015CB09 /* APICaller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

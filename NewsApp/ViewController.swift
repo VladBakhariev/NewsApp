@@ -7,6 +7,12 @@
 
 import UIKit
 
+// TavleView
+// Custom Cell
+// API Caller
+// Open the News Story
+// Search for News Stories 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
