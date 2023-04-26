@@ -28,7 +28,8 @@ final class APICaller {
             else if let data = data {
                 
                 do {
-                    let result = try JSONDecoder().decode(String.self, from: data)
+                    let result = try JSONDecoder().decode(APIResponse.self, from: data)
+                    print("Articles: \(result.articles.count)")
                 }
                 catch {
                     completion(.failure(error))
