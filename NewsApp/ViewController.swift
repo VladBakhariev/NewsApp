@@ -42,6 +42,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         imageURL: URL(string: $0.urlToImage ?? "")
                     )
                 })
+                
+                DispatchQueue.main.async {
+                    self?.tableView.reloadData()
+                }
             case .failure(let error):
                 print(error)
             }
