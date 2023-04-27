@@ -17,7 +17,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     private let tableView: UITableView = {
         let table = UITableView()
-        table.register(UITableViewCell.self,
+        table.register(NewsTableViewCell.self,
                        forCellReuseIdentifier: NewsTableViewCell.identifier)
         return table
     }()
@@ -57,11 +57,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.frame = view.bounds
     }
 
-
     //Table
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return viewModels.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        guard let cell = tableView.dequeueReusableCell(
