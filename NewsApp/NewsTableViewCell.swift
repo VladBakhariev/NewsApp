@@ -37,8 +37,14 @@ class NewsTableViewCell: UITableViewCell {
     private let subtitleLabel: UILabel = {
         let label = UILabel()
         label.font = .systemFont(ofSize: 18, weight: .regular)
-        
         return label
+    }()
+    
+    private let newsImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = .systemRed
+        imageView.contentMode = .scaleAspectFill
+        return imageView
     }()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
