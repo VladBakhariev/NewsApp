@@ -44,6 +44,7 @@ class NewsTableViewCell: UITableViewCell {
     
     private let newsImageView: UIImageView = {
         let imageView = UIImageView()
+        imageView.clipsToBounds = true
         imageView.backgroundColor = .systemRed
         imageView.contentMode = .scaleAspectFill
         return imageView
