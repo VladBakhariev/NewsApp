@@ -32,11 +32,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         view.backgroundColor = .systemBackground
         
-        APICaller.shared.getTopStories { result in
+        APICaller.shared.getTopStories { [weak self] result in
             switch result {
-                
             case .success(let articles):
-                break
+                self?.viewModels = articles.compactMap({
+                    NewsTableViewCellVIewModel(
+                        title: $0.title,
+                        subtitle: $0.description ?? "No Description",
+                        imageURL: URL(string: $0.urlToImage ?? "")
+                    )
+                })
             case .failure(let error):
                 print(error)
             }
