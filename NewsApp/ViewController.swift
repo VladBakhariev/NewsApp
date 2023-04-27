@@ -16,7 +16,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     private let tableView: UITableView = {
-        let table = UITableView
+        let table = UITableView()
         table.register(UITableViewCell.self,
                        forCellReuseIdentifier: "cell")
         return table

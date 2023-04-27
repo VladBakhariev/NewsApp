@@ -14,6 +14,7 @@
 		CE30541E29F9918B0015CB09 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE30541D29F9918B0015CB09 /* Assets.xcassets */; };
 		CE30542129F9918B0015CB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE30541F29F9918B0015CB09 /* LaunchScreen.storyboard */; };
 		CE30542929F994360015CB09 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30542829F994360015CB09 /* APICaller.swift */; };
+		CE30542B29F9A6060015CB09 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE30542A29F9A6060015CB09 /* NewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CE30542029F9918B0015CB09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE30542229F9918B0015CB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE30542829F994360015CB09 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		CE30542A29F9A6060015CB09 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				CE30541D29F9918B0015CB09 /* Assets.xcassets */,
 				CE30541F29F9918B0015CB09 /* LaunchScreen.storyboard */,
 				CE30542229F9918B0015CB09 /* Info.plist */,
+				CE30542A29F9A6060015CB09 /* NewsTableViewCell.swift */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				CE30541929F991860015CB09 /* ViewController.swift in Sources */,
 				CE30541529F991860015CB09 /* AppDelegate.swift in Sources */,
+				CE30542B29F9A6060015CB09 /* NewsTableViewCell.swift in Sources */,
 				CE30541729F991860015CB09 /* SceneDelegate.swift in Sources */,
 				CE30542929F994360015CB09 /* APICaller.swift in Sources */,
 			);
