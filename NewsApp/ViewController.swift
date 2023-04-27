@@ -18,9 +18,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     private let tableView: UITableView = {
         let table = UITableView()
         table.register(UITableViewCell.self,
-                       forCellReuseIdentifier: "cell")
+                       forCellReuseIdentifier: NewsTableViewCell.identifier)
         return table
     }()
+    
+    private var viewModels = [NewsTableViewCellVIewModel]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         APICaller.shared.getTopStories { result in
             switch result {
                 
-            case .success(let response):
+            case .success(let articles):
                 break
             case .failure(let error):
                 print(error)
@@ -53,11 +55,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: "cell",
+       guard let cell = tableView.dequeueReusableCell(
+            withIdentifier: NewsTableViewCell.identifier,
             for: indexPath
-        )
-        cell.textLabel?.text = "Something"
+        ) as? NewsTableViewCell else {
+            fatalError()
+        }
+        cell.configure(with: viewModels[indexPath.row])
         return cell
     }
     
