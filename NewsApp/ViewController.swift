@@ -33,6 +33,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.dataSource = self
         view.backgroundColor = .systemBackground
         
+        fetchTopStories()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tableView.frame = view.bounds
+    }
+    
+    private func fetchTopStories() {
         APICaller.shared.getTopStories { [weak self] result in
             switch result {
             case .success(let articles):
@@ -51,12 +60,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             case .failure(let error):
                 print(error)
             }
-        }
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        tableView.frame = view.bounds
+        } 
     }
 
     //Table
