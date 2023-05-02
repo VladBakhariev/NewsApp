@@ -12,7 +12,7 @@ final class APICaller {
     
     struct Constants {
         static let topHeadlinesURL = URL(string:
-                                            "https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=c31862f807614b659497bd152a6bdf54")
+                                            "https://newsapi.org/v2/everything?q=apple&from=2023-05-01&to=2023-05-01&sortBy=popularity&apiKey=c31862f807614b659497bd152a6bdf54")
         static let searchUrlString = "https://newsapi.org/v2/everything?sortBy=popularity&apiKey=c31862f807614b659497bd152a6bdf54&q="
     }
     
