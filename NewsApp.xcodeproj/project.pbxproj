@@ -63,11 +63,11 @@
 				CE30541429F991860015CB09 /* AppDelegate.swift */,
 				CE30541629F991860015CB09 /* SceneDelegate.swift */,
 				CE30541829F991860015CB09 /* ViewController.swift */,
-				CE30542829F994360015CB09 /* APICaller.swift */,
 				CE30541A29F991860015CB09 /* Main.storyboard */,
 				CE30541D29F9918B0015CB09 /* Assets.xcassets */,
 				CE30541F29F9918B0015CB09 /* LaunchScreen.storyboard */,
 				CE30542229F9918B0015CB09 /* Info.plist */,
+				CE30542829F994360015CB09 /* APICaller.swift */,
 				CE30542A29F9A6060015CB09 /* NewsTableViewCell.swift */,
 			);
 			path = NewsApp;

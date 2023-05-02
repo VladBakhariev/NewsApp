@@ -13,7 +13,7 @@ import SafariServices
 // Open the News Story
 // Search for News Stories 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     private let tableView: UITableView = {
         let table = UITableView()
@@ -21,6 +21,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                        forCellReuseIdentifier: NewsTableViewCell.identifier)
         return table
     }()
+    
+    private let searchVC = UISearchController(searchResultsController: nil)
     
     private var articles = [Article]()
     private var viewModels = [NewsTableViewCellVIewModel]()
@@ -34,11 +36,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         view.backgroundColor = .systemBackground
         
         fetchTopStories()
+        createSearchBar()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tableView.frame = view.bounds
+    }
+    private func createSearchBar() {
+        navigationItem.searchController = searchVC
+        searchVC.searchBar.delegate = self
     }
     
     private func fetchTopStories() {
@@ -93,6 +100,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    // Search
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        guard let text = searchBar.text, !text.isEmpty else {
+            return
+        }
+        
+        print(text)
     }
 }
 
