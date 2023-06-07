@@ -2,17 +2,17 @@
 Our goal is to develop a custom app similar to Apple News using UIkit and Swift. This involves integrating an API, designing a personalized user interface, implementing image caching, and additional functionalities.
 <p><strong><span class="hljs-section">Features:</span></strong></p>
 <ul>
-<li><span class="hljs-bullet">-</span> Browse and read news articles</li>
-<li><span class="hljs-bullet">-</span> Display news articles with titles, subtitles, and images</li>
-<li><span class="hljs-bullet">-</span> Asynchronous image loading for improved performance</li>
-<li><span class="hljs-bullet">-</span> Integration with URLSession for fetching article images from remote URLs</li>
-<li><span class="hljs-bullet">-</span> Reusable table view cell architecture for efficient memory management</li>
+<li>Browse and read news articles</li>
+<li>Display news articles with titles, subtitles, and images</li>
+<li>Asynchronous image loading for improved performance</li>
+<li>Integration with URLSession for fetching article images from remote URLs</li>
+<li>Reusable table view cell architecture for efficient memory management</li>
 </ul>
 <p><span class="hljs-section"><strong>Installation:</strong></span></p>
 <ul>
-<li><span class="hljs-bullet">1.</span> Clone the repository to your local machine.</li>
-<li><span class="hljs-bullet">2.</span> Open the <span class="hljs-code">`NewsApp.xcodeproj`</span> file using Xcode.</li>
-<li><span class="hljs-bullet">3.</span> Build and run the project on the iOS simulator or a physical device.</li>
+<li>Clone the repository to your local machine.</li>
+<li>Open the <span class="hljs-code">`NewsApp.xcodeproj`</span> file using Xcode.</li>
+<li>Build and run the project on the iOS simulator or a physical device.</li>
 </ul>
 <p><strong><span class="hljs-section">Usage:</span>&nbsp;</strong></p>
 <ul>
